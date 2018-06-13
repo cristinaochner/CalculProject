@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SceltaCalcolatrice" />
-        <activity android:name=".Bottoni"></activity>
+        <activity android:name=".Bottoni" />
+        <activity android:name=".HelpActivity"></activity>
     </application>
 
 </manifest>

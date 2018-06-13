@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView TestoInizio;
-    Button btnStandard,btnPolacca, btnPolaccaInversa;
+    Button btnStandard,btnPolacca, btnPolaccaInversa, btnPol;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnStandard= (Button) findViewById(R.id.btnStandard);
         btnPolacca= (Button) findViewById(R.id.btnPolacca);
         btnPolaccaInversa= (Button) findViewById(R.id.btnPolaccaInversa);
+        btnPol= (Button) findViewById(R.id.btnPol);
 
         btnStandard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(apriCalcolatrice);
             }
         });
+
+        btnPol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent apriHelp= new Intent(MainActivity.this,HelpActivity.class);
+                apriHelp.putExtra("TIPO_EXPRESSIONE", 1);
+                startActivity(apriHelp);
+            }
+        });
+
 
 
 

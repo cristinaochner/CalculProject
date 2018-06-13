@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:textAlignment="viewStart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:text="La notazione polacca è una particolare sintassi atta a denotare formule         matematiche e algoritmi, caratterizzata dal fatto che gli operatori si trovano tutti a         sinistra degli argomenti. Per questo motivo, viene anche detta notazione prefissa. Se l\'         interprete conosce in anticipo l\'arietà di ogni operatore, la notazione polacca permette         di descrivere univocamente qualsiasi formula o algoritmo senza utilizzare parentesi o altri         elementi sintattici di separazione. Deve il suo nome a Łukasiewicz, che la utilizzò per la         prima volta intorno all'anno 1920 per semplificare il calcolo proposizionale."
+                android:textSize="24sp"
+                tools:text="La notazione polacca è una particolare sintassi atta a denotare formule         matematiche e algoritmi, caratterizzata dal fatto che gli operatori si trovano tutti a         sinistra degli argomenti. Per questo motivo, viene anche detta notazione prefissa. Se l\'         interprete conosce in anticipo l\'arietà di ogni operatore, la notazione polacca permette         di descrivere univocamente qualsiasi formula o algoritmo senza utilizzare parentesi o altri         elementi sintattici di separazione. Deve il suo nome a Łukasiewicz, che la utilizzò per la         prima volta intorno all'anno 1920 per semplificare il calcolo proposizionale." />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

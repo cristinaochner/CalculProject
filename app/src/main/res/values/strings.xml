@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CalcolProject</string>
+    <string name="help1" >La notazione polacca è una particolare sintassi atta a denotare formule
+        matematiche e algoritmi, caratterizzata dal fatto che gli operatori si trovano tutti a
+        sinistra degli argomenti. Per questo motivo, viene anche detta notazione prefissa. Se l\'
+        interprete conosce in anticipo l\'arietà di ogni operatore, la notazione polacca permette
+        di descrivere univocamente qualsiasi formula o algoritmo senza utilizzare parentesi o altri
+        elementi sintattici di separazione. Deve il suo nome a Łukasiewicz, che la utilizzò per la
+        prima volta intorno all'anno 1920 per semplificare il calcolo proposizionale.</string>
 </resources>

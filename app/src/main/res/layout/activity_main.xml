@@ -15,8 +15,11 @@
 
         <TextView
             android:id="@+id/TestoInizio"
-            android:layout_width="372dp"
-            android:layout_height="113dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
             android:text="Scegli una notazione in cui eseguire la tua espressione"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -25,32 +28,87 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnStandard"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="STANDARD"
-                android:textAlignment="center"
-                android:textSize="24sp" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnPolacca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="POLACCA"
-                android:textAlignment="center"
-                android:textSize="24sp" />
+                <Button
+                    android:id="@+id/btnStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="STANDARD"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/btnPolaccaInversa"
+                <Button
+                    android:id="@+id/btnSt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="?"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="POLACCA INVERSA"
-                android:textAlignment="center"
-                android:textSize="24sp" />
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPolacca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="POLACCA"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnPol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="?"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPolaccaInversa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="POLACCA INVERSA"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnRpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="?"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

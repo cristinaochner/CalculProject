@@ -15,7 +15,11 @@ La notazione suffissa o 'Polacca Inversa' (RPN) pone gli operatori dopo gli oper
  21
  ```
 La notazione prefissa è l'opposto della precedente:
-
+```
+ +  *  3  2  *  5  3  
+ +  6 15
+ 21
+ ```
 
 Il repository contiene un progetto per 
 [![N|Solid](https://developer.android.com/studio/images/home/android-studio-logo.svg)]()

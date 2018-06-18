@@ -1,6 +1,7 @@
 # CalculProject
 
 CalculProject è un'applicazione per Android che può risolvere espressioni in notazione suffissa, infissa e prefissa.
+E' stata sviluppata come progetto di tesi di diploma, [qui](https://github.com/cristinaochner/CalculProject/blob/master/documenti/TesinaCri.pdf) è disponibile la relativa documentazione.
 Sono disponibili una [Wiki](https://github.com/cristinaochner/CalculProject/wiki) e un sistema di [bug tracking](https://github.com/cristinaochner/CalculProject/issues) pubblici.
 
 ### Sulle notazioni..:

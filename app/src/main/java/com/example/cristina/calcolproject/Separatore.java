@@ -1,7 +1,5 @@
 package com.example.cristina.calcolproject;
 
-import android.media.session.MediaSession;
-
 import java.util.ArrayList;
 
 public class Separatore {
@@ -15,6 +13,7 @@ public class Separatore {
     }
 
     ArrayList<String> elementi = new ArrayList<>();
+
     boolean inviato = false;
 
     public void addNumber(String s) {
@@ -48,16 +47,16 @@ public class Separatore {
     }
 
     public Double equal(int i ) {
-        Expression e = null;
+        Espressione e = null;
 
         if (i == 0)
-            e = Expression.algebraic(elementi);
+            e = Espressione.creaClassica(elementi);
 
         if (i == 1)
-            e = Expression.polacca1(elementi);
+            e = Espressione.creaRPN(elementi);
 
         if (i == 2)
-            e = Expression.polacca2(elementi);
+            e = Espressione.creaPolacca(elementi);
 
         return e.execute();
     }

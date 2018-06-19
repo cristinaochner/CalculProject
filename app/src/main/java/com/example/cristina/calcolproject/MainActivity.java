@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Expression e = new Add(new Number(3.0), new Mul(new Number(2.0), new Number(5.0)));
+        Espressione e = new Add(new Numero(3.0), new Mol(new Numero(2.0), new Numero(5.0)));
 
         e.execute();
 

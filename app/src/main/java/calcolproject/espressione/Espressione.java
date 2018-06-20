@@ -1,11 +1,11 @@
-package com.example.cristina.calcolproject;
+package calcolproject.espressione;
 
 import java.util.ArrayList;
 import java.util.Stack;
 
 public abstract class Espressione {
 
-    abstract Double execute();
+    public abstract Double execute();
 
     private static boolean isNumber(String s) {
         try {

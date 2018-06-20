@@ -1,7 +1,9 @@
-package com.example.cristina.calcolproject;
+package calcolproject.attivita;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import calcolproject.R;
 
 public class ActivityAiuto extends AppCompatActivity {
 

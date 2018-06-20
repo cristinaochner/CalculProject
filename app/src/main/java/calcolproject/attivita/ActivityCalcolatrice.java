@@ -1,12 +1,16 @@
-package com.example.cristina.calcolproject;
+package calcolproject.attivita;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
+
+import calcolproject.R;
+import calcolproject.espressione.Espressione;
+import calcolproject.separatore.Separatore;
 
 public class ActivityCalcolatrice extends AppCompatActivity {
     private Button btn_point, btn_zero, btn_add, btn_sub, btn_one, btn_two, btn_three, btn_mul,

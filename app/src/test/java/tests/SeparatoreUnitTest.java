@@ -1,6 +1,8 @@
-package com.example.cristina.calcolproject;
+package tests;
 
 import org.junit.Test;
+
+import calcolproject.separatore.Separatore;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,6 +22,7 @@ public class SeparatoreUnitTest {
         assertEquals(s.toString(), "25  +  12  ");
 
     }
+
     @Test
     public void testSeparatoreEnter() {
 
@@ -58,7 +61,6 @@ public class SeparatoreUnitTest {
         assertEquals(s.toString(), "2.5  +  12  +  1.  ");
 
     }
-
 
 
 }

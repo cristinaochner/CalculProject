@@ -1,4 +1,4 @@
-package com.example.cristina.calcolproject;
+package calcolproject.separatore;
 
 import java.util.ArrayList;
 

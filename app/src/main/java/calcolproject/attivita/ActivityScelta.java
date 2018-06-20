@@ -1,4 +1,4 @@
-package com.example.cristina.calcolproject;
+package calcolproject.attivita;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import calcolproject.R;
+
+import calcolproject.espressione.Add;
+import calcolproject.espressione.Espressione;
+import calcolproject.espressione.Mol;
+import calcolproject.espressione.Numero;
 
 public class ActivityScelta extends AppCompatActivity {
 

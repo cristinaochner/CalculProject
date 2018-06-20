@@ -41,28 +41,40 @@
             android:rowCount="4">
 
             <Button
-                android:id="@+id/btn_point"
+                android:id="@+id/btnCe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="."
+                android:text="CE"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/btn_zero"
+                android:id="@+id/btnCd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="0"
+                android:text="CD"
                 android:textAlignment="center"
-                android:textSize="24sp" />
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_rowWeight="1"
+                android:gravity="fill_vertical|fill_horizontal"
+                android:text="C"
+                android:textAlignment="center"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/btn_add"
@@ -74,19 +86,6 @@
                 android:gravity="fill_vertical|fill_horizontal"
                 android:text="+"
                 android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/btn_sub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill_vertical|fill_horizontal"
-                android:layout_rowWeight="1"
-                android:gravity="fill_vertical|fill_horizontal"
-                android:text="-"
-                android:textAlignment="center"
-                android:textIsSelectable="false"
                 android:textSize="30sp" />
 
             <Button
@@ -126,15 +125,16 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/btn_mul"
+                android:id="@+id/btn_sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="*"
+                android:text="-"
                 android:textAlignment="center"
+                android:textIsSelectable="false"
                 android:textSize="30sp" />
 
             <Button
@@ -174,14 +174,14 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/btn_div"
+                android:id="@+id/btn_mul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="/"
+                android:text="*"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
@@ -222,51 +222,40 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/btn_equals"
+                android:id="@+id/btn_div"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="="
+                android:text="/"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/btnCe"
+                android:id="@+id/btn_point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
-                android:text="CE"
+                android:text="."
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/btnVuoto"
+                android:id="@+id/btn_zero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill_vertical|fill_horizontal"
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
+                android:text="0"
                 android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/btnCancelSingle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill_vertical|fill_horizontal"
-                android:layout_rowWeight="1"
-                android:gravity="fill_vertical|fill_horizontal"
-                android:text="del"
-                android:textAlignment="center"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnEnter"
@@ -277,6 +266,18 @@
                 android:layout_rowWeight="1"
                 android:gravity="fill_vertical|fill_horizontal"
                 android:text="E"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_equals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_rowWeight="1"
+                android:gravity="fill_vertical|fill_horizontal"
+                android:text="="
                 android:textAlignment="center"
                 android:textSize="30sp" />
 

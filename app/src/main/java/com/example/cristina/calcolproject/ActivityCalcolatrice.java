@@ -181,7 +181,8 @@ public class ActivityCalcolatrice extends AppCompatActivity {
 
             editTwo.setText(String.valueOf(e.execute()));
         } catch (Exception e)
-        {}
+        {
+            editTwo.setText("N/A");}
     }
 
     private void anyButtonClicked() {

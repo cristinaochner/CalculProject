@@ -17,9 +17,11 @@
         <EditText
             android:id="@+id/editOne"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
+            android:layout_height="wrap_content"
             android:ems="10"
+            android:enabled="false"
             android:inputType="number"
+            android:textColor="@android:color/black"
             android:textSize="24sp" />
 
         <EditText
@@ -27,7 +29,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:enabled="false"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
 
         <GridLayout
             android:id="@+id/gridProva"

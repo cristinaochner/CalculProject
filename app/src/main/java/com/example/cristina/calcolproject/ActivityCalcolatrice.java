@@ -24,31 +24,31 @@ public class ActivityCalcolatrice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calcolatrice);
 
-        btn_point = (Button) findViewById(R.id.btn_point);
-        btn_zero = (Button) findViewById(R.id.btn_zero);
-        btn_add = (Button) findViewById(R.id.btn_add);
-        btn_sub = (Button) findViewById(R.id.btn_sub);
-        btn_one = (Button) findViewById(R.id.btn_one);
-        btn_two = (Button) findViewById(R.id.btn_two);
-        btn_three = (Button) findViewById(R.id.btn_three);
-        btn_mul = (Button) findViewById(R.id.btn_mul);
-        btn_four = (Button) findViewById(R.id.btn_four);
-        btn_five = (Button) findViewById(R.id.btn_five);
-        btn_six = (Button) findViewById(R.id.btn_six);
-        btn_div = (Button) findViewById(R.id.btn_div);
-        btn_seven = (Button) findViewById(R.id.btn_seven);
-        btn_eight = (Button) findViewById(R.id.btn_eight);
-        btn_nine = (Button) findViewById(R.id.btn_nine);
-        btn_equals = (Button) findViewById(R.id.btn_equals);
-        btnEnter = (Button) findViewById(R.id.btnEnter);
+        btn_point = findViewById(R.id.btn_point);
+        btn_zero = findViewById(R.id.btn_zero);
+        btn_add = findViewById(R.id.btn_add);
+        btn_sub = findViewById(R.id.btn_sub);
+        btn_one = findViewById(R.id.btn_one);
+        btn_two = findViewById(R.id.btn_two);
+        btn_three = findViewById(R.id.btn_three);
+        btn_mul = findViewById(R.id.btn_mul);
+        btn_four = findViewById(R.id.btn_four);
+        btn_five = findViewById(R.id.btn_five);
+        btn_six = findViewById(R.id.btn_six);
+        btn_div = findViewById(R.id.btn_div);
+        btn_seven = findViewById(R.id.btn_seven);
+        btn_eight = findViewById(R.id.btn_eight);
+        btn_nine = findViewById(R.id.btn_nine);
+        btn_equals = findViewById(R.id.btn_equals);
+        btnEnter = findViewById(R.id.btnEnter);
 
 
-        btnC = (Button) findViewById(R.id.btnC);
-        btnCd = (Button) findViewById(R.id.btnCd);
-        btnCe = (Button) findViewById(R.id.btnCe);
+        btnC = findViewById(R.id.btnC);
+        btnCd = findViewById(R.id.btnCd);
+        btnCe = findViewById(R.id.btnCe);
 
-        editOne = (EditText) findViewById(R.id.editOne);
-        editTwo = (EditText) findViewById(R.id.editTwo);
+        editOne = findViewById(R.id.editOne);
+        editTwo = findViewById(R.id.editTwo);
 
         btn_point.setOnClickListener(new View.OnClickListener() {
             @Override

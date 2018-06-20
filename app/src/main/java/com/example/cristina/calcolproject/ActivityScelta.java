@@ -16,11 +16,11 @@ public class ActivityScelta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scelta);
 
-        TestoInizio= (TextView)findViewById(R.id.TestoInizio);
-        btnStandard= (Button) findViewById(R.id.btnStandard);
-        btnPolacca= (Button) findViewById(R.id.btnPolacca);
-        btnPolaccaInversa= (Button) findViewById(R.id.btnPolaccaInversa);
-        btnPol= (Button) findViewById(R.id.btnPol);
+        TestoInizio= findViewById(R.id.TestoInizio);
+        btnStandard= findViewById(R.id.btnStandard);
+        btnPolacca= findViewById(R.id.btnPolacca);
+        btnPolaccaInversa= findViewById(R.id.btnPolaccaInversa);
+        btnPol= findViewById(R.id.btnPol);
 
         btnStandard.setOnClickListener(new View.OnClickListener() {
             @Override

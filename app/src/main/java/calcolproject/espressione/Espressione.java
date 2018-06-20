@@ -5,8 +5,6 @@ import java.util.Stack;
 
 public abstract class Espressione {
 
-    public abstract Double execute();
-
     private static boolean isNumber(String s) {
         try {
             Double.parseDouble(s);
@@ -15,7 +13,7 @@ public abstract class Espressione {
             return false;
         }
     }
-    
+
     public static Espressione creaClassica(ArrayList<String> elementi) {
         if (elementi.size() == 1) {
             String primoElemento = elementi.get(0);
@@ -51,7 +49,7 @@ public abstract class Espressione {
             return new Div(creaClassica(left), creaClassica(right));
         }
     }
-    
+
     public static Espressione creaRPN(ArrayList<String> elementi) {
         Stack<Espressione> stack = new Stack<>();
 
@@ -79,13 +77,15 @@ public abstract class Espressione {
         }
         return stack.pop();
     }
-    
+
     public static Espressione creaPolacca(ArrayList<String> elementi) {
         ArrayList<String> elementiInversa = new ArrayList<>();
         for (String s : elementi) {
             elementiInversa.add(0, s);
         }
-        return  creaRPN(elementiInversa);
+        return creaRPN(elementiInversa);
     }
+
+    public abstract Double execute();
 }
 

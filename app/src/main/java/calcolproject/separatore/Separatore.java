@@ -4,6 +4,18 @@ import java.util.ArrayList;
 
 public class Separatore {
 
+    final ArrayList<String> elementi = new ArrayList<>();
+    boolean inviato = false;
+
+    private static boolean isNumber(String s) {
+        try {
+            Double.parseDouble(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
     public String toString() {
         String acc = "";
         for (String s : elementi) {
@@ -15,10 +27,6 @@ public class Separatore {
     public ArrayList<String> getElementi() {
         return elementi;
     }
-
-    final ArrayList<String> elementi = new ArrayList<>();
-
-    boolean inviato = false;
 
     public void addNumber(String s) {
         if (elementi.size() == 0) {
@@ -39,15 +47,6 @@ public class Separatore {
 
     public void addOperator(String s) {
         elementi.add(s);
-    }
-
-    private static boolean isNumber(String s) {
-        try {
-            Double.parseDouble(s);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
     }
 
    /*
@@ -80,15 +79,12 @@ public class Separatore {
         int lastIndex = elementi.size() - 1;
         String lastElement = elementi.get(lastIndex);
         if (isNumber(lastElement)) {
-            if (lastElement.length() > 1 )
-            {
-                elementi.set(lastIndex, lastElement.substring(0,lastElement.length()-1));
-            } else
-            {
+            if (lastElement.length() > 1) {
+                elementi.set(lastIndex, lastElement.substring(0, lastElement.length() - 1));
+            } else {
                 cancellaElemento();
             }
-        } else
-        {
+        } else {
             cancellaElemento();
         }
     }
@@ -96,6 +92,6 @@ public class Separatore {
     public void cancellaElemento() {
 
         if (elementi.size() > 0)
-            elementi.remove(elementi.size()-1);
+            elementi.remove(elementi.size() - 1);
     }
 }

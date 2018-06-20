@@ -47,7 +47,6 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/btnSt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
@@ -100,7 +99,6 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/btnRpn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="5"

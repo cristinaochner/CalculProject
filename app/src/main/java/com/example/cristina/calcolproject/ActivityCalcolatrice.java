@@ -10,8 +10,12 @@ import java.util.ArrayList;
 
 public class ActivityCalcolatrice extends AppCompatActivity {
     private Button btn_point, btn_zero, btn_add, btn_sub, btn_one, btn_two, btn_three, btn_mul,
-            btn_four, btn_five, btn_six, btn_div, btn_seven, btn_eight, btn_nine, btn_equals, btnEnter,
-            btnCe, btnCancelSingle, btnVuoto;
+            btn_four, btn_five, btn_six, btn_div, btn_seven, btn_eight, btn_nine, btn_equals, btnEnter, btnVuoto;
+
+    private Button btnCe;
+    private Button btnCd;
+    private Button btnC;
+
     private EditText editOne, editTwo;
     private Separatore sep = new Separatore();
 
@@ -37,6 +41,11 @@ public class ActivityCalcolatrice extends AppCompatActivity {
         btn_nine = (Button) findViewById(R.id.btn_nine);
         btn_equals = (Button) findViewById(R.id.btn_equals);
         btnEnter = (Button) findViewById(R.id.btnEnter);
+
+
+        btnC = (Button) findViewById(R.id.btnC);
+        btnCd = (Button) findViewById(R.id.btnCd);
+        btnCe = (Button) findViewById(R.id.btnCe);
 
         editOne = (EditText) findViewById(R.id.editOne);
         editTwo = (EditText) findViewById(R.id.editTwo);
@@ -146,6 +155,30 @@ public class ActivityCalcolatrice extends AppCompatActivity {
                 anyButtonClicked();
             }
         });
+
+        btnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sep.cancellaTutto();
+                anyButtonClicked();
+            }
+        });
+        btnCd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sep.cancellaCifra();
+                anyButtonClicked();
+            }
+        });
+        btnCe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sep.cancellaElemento();
+                anyButtonClicked();
+            }
+        });
+
+
         btn_equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -163,8 +196,7 @@ public class ActivityCalcolatrice extends AppCompatActivity {
 
     }
 
-    private void calcolaEspressione()
-    {
+    private void calcolaEspressione() {
         try {
             int type = getIntent().getExtras().getInt("TIPO_EXPRESSIONE");
             ArrayList<String> elementi = sep.getElementi();
@@ -180,9 +212,9 @@ public class ActivityCalcolatrice extends AppCompatActivity {
                 e = Espressione.creaPolacca(elementi);
 
             editTwo.setText(String.valueOf(e.execute()));
-        } catch (Exception e)
-        {
-            editTwo.setText("N/A");}
+        } catch (Exception e) {
+            editTwo.setText("N/A");
+        }
     }
 
     private void anyButtonClicked() {

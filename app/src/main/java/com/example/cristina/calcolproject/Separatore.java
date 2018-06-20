@@ -69,4 +69,33 @@ public class Separatore {
     public void enter() {
         inviato = true;
     }
+
+    public void cancellaTutto() {
+        elementi.clear();
+    }
+
+    public void cancellaCifra() {
+        if (elementi.size() == 0) return;
+
+        int lastIndex = elementi.size() - 1;
+        String lastElement = elementi.get(lastIndex);
+        if (isNumber(lastElement)) {
+            if (lastElement.length() > 1 )
+            {
+                elementi.set(lastIndex, lastElement.substring(0,lastElement.length()-1));
+            } else
+            {
+                cancellaElemento();
+            }
+        } else
+        {
+            cancellaElemento();
+        }
+    }
+
+    public void cancellaElemento() {
+
+        if (elementi.size() > 0)
+            elementi.remove(elementi.size()-1);
+    }
 }

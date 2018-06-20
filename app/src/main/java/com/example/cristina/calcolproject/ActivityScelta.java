@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityScelta extends AppCompatActivity {
 
     TextView TestoInizio;
     Button btnStandard,btnPolacca, btnPolaccaInversa, btnPol;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_scelta);
 
         TestoInizio= (TextView)findViewById(R.id.TestoInizio);
         btnStandard= (Button) findViewById(R.id.btnStandard);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnStandard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent apriCalcolatrice= new Intent(MainActivity.this,Bottoni.class);
+                Intent apriCalcolatrice= new Intent(ActivityScelta.this,ActivityCalcolatrice.class);
                 apriCalcolatrice.putExtra("TIPO_EXPRESSIONE", 0);
                 startActivity(apriCalcolatrice);
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnPolacca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent apriCalcolatrice= new Intent(MainActivity.this,Bottoni.class);
+                Intent apriCalcolatrice= new Intent(ActivityScelta.this,ActivityCalcolatrice.class);
                 apriCalcolatrice.putExtra("TIPO_EXPRESSIONE", 2);
                 startActivity(apriCalcolatrice);
             }
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btnPolaccaInversa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent apriCalcolatrice= new Intent(MainActivity.this,Bottoni.class);
+                Intent apriCalcolatrice= new Intent(ActivityScelta.this,ActivityCalcolatrice.class);
                 apriCalcolatrice.putExtra("TIPO_EXPRESSIONE", 1);
                 startActivity(apriCalcolatrice);
             }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         btnPol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent apriHelp= new Intent(MainActivity.this,HelpActivity.class);
+                Intent apriHelp= new Intent(ActivityScelta.this,ActivityAiuto.class);
                 apriHelp.putExtra("TIPO_EXPRESSIONE", 1);
                 startActivity(apriHelp);
             }

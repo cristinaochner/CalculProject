@@ -12,7 +12,11 @@ public class Separatore {
         return acc;
     }
 
-    ArrayList<String> elementi = new ArrayList<>();
+    public ArrayList<String> getElementi() {
+        return elementi;
+    }
+
+    final ArrayList<String> elementi = new ArrayList<>();
 
     boolean inviato = false;
 
@@ -46,6 +50,7 @@ public class Separatore {
         }
     }
 
+   /*
     public Double equal(int i ) {
         Espressione e = null;
 
@@ -59,7 +64,7 @@ public class Separatore {
             e = Espressione.creaPolacca(elementi);
 
         return e.execute();
-    }
+    }*/
 
     public void enter() {
         inviato = true;

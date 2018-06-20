@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Bottoni extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class ActivityCalcolatrice extends AppCompatActivity {
     private Button btn_point, btn_zero, btn_add, btn_sub, btn_one, btn_two, btn_three, btn_mul,
             btn_four, btn_five, btn_six, btn_div, btn_seven, btn_eight, btn_nine, btn_equals, btnEnter,
             btnCe, btnCancelSingle, btnVuoto;
@@ -16,7 +18,7 @@ public class Bottoni extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottoni);
+        setContentView(R.layout.activity_calcolatrice);
 
         btn_point = (Button) findViewById(R.id.btn_point);
         btn_zero = (Button) findViewById(R.id.btn_zero);
@@ -147,10 +149,6 @@ public class Bottoni extends AppCompatActivity {
         btn_equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Double d = sep.equal((getIntent().getExtras().getInt("TIPO_EXPRESSIONE")));
-                editTwo.setText(d.toString());
-
                 anyButtonClicked();
             }
         });
@@ -165,7 +163,31 @@ public class Bottoni extends AppCompatActivity {
 
     }
 
+    private void calcolaEspressione()
+    {
+        try {
+            int type = getIntent().getExtras().getInt("TIPO_EXPRESSIONE");
+            ArrayList<String> elementi = sep.getElementi();
+
+            Espressione e = null;
+            if (type == 0)
+                e = Espressione.creaClassica(elementi);
+
+            if (type == 1)
+                e = Espressione.creaRPN(elementi);
+
+            if (type == 2)
+                e = Espressione.creaPolacca(elementi);
+
+            editTwo.setText(String.valueOf(e.execute()));
+        } catch (Exception e)
+        {}
+    }
+
     private void anyButtonClicked() {
+
         editOne.setText(sep.toString());
+
+        calcolaEspressione();
     }
 }

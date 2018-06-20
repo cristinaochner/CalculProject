@@ -5,8 +5,10 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import calcolproject.espressione.Espressione;
+import calcolproject.espressione.ExpressionBuilder;
 
 public class EspressioneUnitTest {
 
@@ -51,17 +53,16 @@ public class EspressioneUnitTest {
 
     @Test
     public void testEspressioneClassica4() {
-        ArrayList<String> as = new ArrayList<>();
 
-        as.add("1");
-        as.add("*");
-        as.add("2");
-        as.add("/");
-        as.add("3");
+        String eString = "1 * 2 / 3";
+        Espressione e1 = Espressione.creaClassica(new ArrayList<>(Arrays.asList(eString.split(" "))));
 
-        Espressione e = Espressione.creaClassica(as);
 
-        Assert.assertEquals(e.execute(), Double.valueOf(2.0 / 3.0));
+        ExpressionBuilder b = new ExpressionBuilder();
+        Espressione e2 = b.n(1).n(2).mul().n(3).div().pop();
+
+
+        Assert.assertEquals(e1.execute(), e2.execute());
     }
 
     @Test

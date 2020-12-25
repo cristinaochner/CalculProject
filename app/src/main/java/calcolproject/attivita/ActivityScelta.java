@@ -16,7 +16,7 @@ import calcolproject.espressione.Numero;
 public class ActivityScelta extends AppCompatActivity {
 
     TextView TestoInizio;
-    Button btnStandard, btnPolacca, btnPolaccaInversa, btnPol;
+    Button btnStandard, btnPolacca, btnPolaccaInversa, btnPol, btnRpn, btnSt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ public class ActivityScelta extends AppCompatActivity {
         btnPolacca = findViewById(R.id.btnPolacca);
         btnPolaccaInversa = findViewById(R.id.btnPolaccaInversa);
         btnPol = findViewById(R.id.btnPol);
+        btnRpn = findViewById(R.id.btnRpn);
+        btnSt =  findViewById(R.id.btnSt);
 
         btnStandard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +59,25 @@ public class ActivityScelta extends AppCompatActivity {
             }
         });
 
+        btnSt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent apriHelp = new Intent(ActivityScelta.this, ActivityAiuto.class);
+                apriHelp.putExtra("TIPO_EXPRESSIONE", 0);
+                startActivity(apriHelp);
+            }
+        });
+
         btnPol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent apriHelp = new Intent(ActivityScelta.this, ActivityAiuto.class);
+                apriHelp.putExtra("TIPO_EXPRESSIONE", 2);
+                startActivity(apriHelp);
+            }
+        });
+
+        btnRpn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent apriHelp = new Intent(ActivityScelta.this, ActivityAiuto.class);
@@ -65,6 +85,8 @@ public class ActivityScelta extends AppCompatActivity {
                 startActivity(apriHelp);
             }
         });
+
+
 
 
         Espressione e = new Add(new Numero(3.0), new Mol(new Numero(2.0), new Numero(5.0)));

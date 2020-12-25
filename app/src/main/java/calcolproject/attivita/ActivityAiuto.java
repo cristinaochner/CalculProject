@@ -10,6 +10,20 @@ public class ActivityAiuto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aiuto);
+        int t = getIntent().getExtras().getInt("TIPO_EXPRESSIONE");
+
+        switch (t) {
+            case 0:
+                setContentView(R.layout.activity_help_st);
+                break;
+            case 1:
+                setContentView(R.layout.activity_help_rpn);
+                break;
+            case 2:
+                setContentView(R.layout.activity_aiuto);
+                break;
+        }
+
+
     }
 }

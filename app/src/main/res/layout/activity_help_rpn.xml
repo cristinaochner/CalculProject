@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:textAlignment="viewStart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:text="La notazione polacca inversa (in inglese reverse polish notation o semplicemente RPN) è una sintassi utilizzata per le formule matematiche. Fu inventata dall'australiano Charles L. Hamblin, filosofo ed esperto di computer, e fu così chiamata per analogia con la notazione polacca, inventata da Łukasiewicz.  Con la RPN è possibile effettuare qualsiasi tipo di operazione, con il vantaggio di eliminare i problemi dovuti alle parentesi e alla precedenza degli operatori (prima la divisione, poi l'addizione ecc.). La sintassi di diverse calcolatrici contabili è tuttora la RPN (l'operatore deve digitare le formule in questo formato). Inizialmente utilizzata per semplificare l'hardware della macchina è diventata una sintassi standard utilizzata anche dall'utente.  Nella notazione polacca inversa, detta anche notazione postfissa in contrasto con la normale notazione infissa, prima si inseriscono gli operandi e poi gli operatori: un esempio di RPN è 3 2 + che equivale al classico 3+2, oppure 10 2 / che fornisce 5.  Quando si utilizza la RPN si fa conto di possedere una pila (stack) su cui pian piano si accumulano gli operandi: prima si impila il 3, poi il 2. Un operatore invece preleva dalla cima della pila tutti gli operandi di cui ha bisogno, esegue l'operazione, e vi rideposita il risultato. L'elemento più in basso è da considerarsi sempre l'operando sinistro. Se l'espressione completa è corretta, alla fine di tutte le operazioni sulla pila si avrà un solo elemento, il risultato finale.  Questa pila permette, come già detto, di evitare l'utilizzo di parentesi per indicare la priorità delle operazioni, basta inserire nella parte sinistra della formula tutti gli operandi delle operazioni a parentesizzazione più esterna, al centro le operazioni più elementari, alla destra tutti gli operatori di combinazioni dei risultati delle operazioni centrali con gli operandi già presenti. Esistono infatti algoritmi di conversione sia dalla notazione infissa a quella postfissa che viceversa."
+                android:textSize="24sp"
+                tools:text="La notazione polacca inversa (in inglese reverse polish notation o semplicemente RPN) è una sintassi utilizzata per le formule matematiche. Fu inventata dall'australiano Charles L. Hamblin, filosofo ed esperto di computer, e fu così chiamata per analogia con la notazione polacca, inventata da Łukasiewicz.  Con la RPN è possibile effettuare qualsiasi tipo di operazione, con il vantaggio di eliminare i problemi dovuti alle parentesi e alla precedenza degli operatori (prima la divisione, poi l'addizione ecc.). La sintassi di diverse calcolatrici contabili è tuttora la RPN (l'operatore deve digitare le formule in questo formato). Inizialmente utilizzata per semplificare l'hardware della macchina è diventata una sintassi standard utilizzata anche dall'utente.  Nella notazione polacca inversa, detta anche notazione postfissa in contrasto con la normale notazione infissa, prima si inseriscono gli operandi e poi gli operatori: un esempio di RPN è 3 2 + che equivale al classico 3+2, oppure 10 2 / che fornisce 5.  Quando si utilizza la RPN si fa conto di possedere una pila (stack) su cui pian piano si accumulano gli operandi: prima si impila il 3, poi il 2. Un operatore invece preleva dalla cima della pila tutti gli operandi di cui ha bisogno, esegue l'operazione, e vi rideposita il risultato. L'elemento più in basso è da considerarsi sempre l'operando sinistro. Se l'espressione completa è corretta, alla fine di tutte le operazioni sulla pila si avrà un solo elemento, il risultato finale.  Questa pila permette, come già detto, di evitare l'utilizzo di parentesi per indicare la priorità delle operazioni, basta inserire nella parte sinistra della formula tutti gli operandi delle operazioni a parentesizzazione più esterna, al centro le operazioni più elementari, alla destra tutti gli operatori di combinazioni dei risultati delle operazioni centrali con gli operandi già presenti. Esistono infatti algoritmi di conversione sia dalla notazione infissa a quella postfissa che viceversa." />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

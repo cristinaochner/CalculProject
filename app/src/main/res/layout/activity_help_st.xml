@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:textAlignment="viewStart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:breakStrategy="high_quality"
+                android:lineSpacingExtra="8sp"
+                android:padding="20dp"
+                android:text="La notazione infissa, usualmente utilizzata quortidianamente, è la comune notazione logica e matematica, nella quale gli operatori sono scritti tra gli operandi su cui agiscono (per es. 2 + 2). Essa non è così semplice da elaborare da parte dei computer come per la notazione prefissa (l'esempio viene scritto così: + 2 2 ) o per la notazione postfissa (detta anche Notazione Polacca Inversa o RPN dove lo stesso calcolo viene scritto così: 2 2 +).  Nella notazione infissa, diversamente da quelle prefissa o postfissa, le parentesi che circondano gruppi di operandi e operatori sono necessarie per indicare l'ordine desiderato dell'esecuzione delle operazioni. In assenza delle parentesi, entrano in causa delle regole di precedenza degli operatori per determinare l'ordine delle operazioni da applicare agli operandi."
+                android:textSize="24sp"
+                tools:text="La notazione infissa, usualmente utilizzata quortidianamente è la comune notazione logica e matematica, nella quale gli operatori sono scritti tra gli operandi su cui agiscono (per es. 2 + 2). Essa non è così semplice da elaborare da parte dei computer come per la notazione prefissa (l'esempio viene scritto così: + 2 2 ) o per la notazione postfissa (detta anche Notazione Polacca Inversa o RPN dove lo stesso calcolo viene scritto così: 2 2 +).  Nella notazione infissa, diversamente da quelle prefissa o postfissa, le parentesi che circondano gruppi di operandi e operatori sono necessarie per indicare l'ordine desiderato dell'esecuzione delle operazioni. In assenza delle parentesi, entrano in causa delle regole di precedenza degli operatori per determinare l'ordine delle operazioni da applicare agli operandi." />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
